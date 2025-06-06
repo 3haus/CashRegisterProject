@@ -66,9 +66,7 @@ public class Mavenproject1 {
     }
     
     public static void main(String[] args) {
-        loadUsersFromFile(); // Load previously saved users
-
-        // If there are no users loaded, create a default admin user.
+        loadUsersFromFile(); 
         if (users.isEmpty()) {
             User admin = new User("admin", "admin123");
             users.add(admin);
@@ -87,7 +85,6 @@ public class Mavenproject1 {
         startCashRegisterSystem();
     }
 
-    // Loads users from "users.txt" if the file exists.
     public static void loadUsersFromFile() {
         File userFile = new File("users.txt");
         if (!userFile.exists()) {
@@ -108,7 +105,6 @@ public class Mavenproject1 {
         }
     }
 
-    // Appends a new user to "users.txt"
     public static void saveUserToFile(User user) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("users.txt", true))) {
             bw.write(user.username + "," + user.password);
@@ -164,7 +160,7 @@ public class Mavenproject1 {
     public static void signup() {
         System.out.println("Sign Up Page");
 
-        String username = "";  // Initialize username
+        String username = "";  
         boolean validUsername = false;
 
         while (!validUsername) {
@@ -174,7 +170,7 @@ public class Mavenproject1 {
             Pattern pattern = Pattern.compile("^[a-zA-Z0-9]{5,15}$");
             Matcher matcher = pattern.matcher(username);
             if (matcher.matches()) {
-                // Check for duplicate usernames
+                
                 boolean duplicate = false;
                 for (User user : users) {
                     if (user.username.equals(username)) {
@@ -192,7 +188,7 @@ public class Mavenproject1 {
             }
         }
 
-        String password = "";  // Initialize password
+        String password = "";  
         boolean validPassword = false;
 
         while (!validPassword) {
@@ -211,7 +207,7 @@ public class Mavenproject1 {
 
         User newUser = new User(username, password);
         users.add(newUser);
-        saveUserToFile(newUser);  // Save the newly created user to file
+        saveUserToFile(newUser);  
         System.out.println("Signup successful! Please login.");
     }
 
