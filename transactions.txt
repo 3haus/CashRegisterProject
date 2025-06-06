@@ -1,0 +1,19 @@
+Piattos, P20.0, Quantity: 2, Total: 40.0
+Coke 1.5L, P71.0, Quantity: 1, Total: 71.0
+Lucky Me Beef Noodles, P11.0, Quantity: 1, Total: 11.0
+Powdered Tang Orange, P21.0, Quantity: 3, Total: 63.0
+Your Total is : P185.0
+Enter Cash Amount: P185.0
+Your change is : P0.0
+Thank you for ordering! 
+Checkout time: 06-06-2025 20:44:48
+Cashier name: 3haus
+Lucky Me Beef Noodles, P11.0, Quantity: 2, Total: 22.0
+Coke 1.5L, P71.0, Quantity: 5, Total: 355.0
+Powdered Tang Orange, P21.0, Quantity: 3, Total: 63.0
+Your Total is : P352.0
+Enter Cash Amount: P440.0
+Your change is : P88.0
+Thank you for ordering! 
+Checkout time: 06-06-2025 20:46:04
+Cashier name: 3haus
